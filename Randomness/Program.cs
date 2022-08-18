@@ -10,11 +10,13 @@ namespace Randomness
     {
         static void Main(string[] args)
         {
-            var rand = new Random();
+            var rand = new Random(); // or else Random rand = new Random();
+
             Console.WriteLine(rand.Next());
+
             Console.WriteLine(rand.Next(26)); // Lower than 26
+
             Console.WriteLine(rand.Next(47,72)); // Between 47 and 72
-                                                 //Console.WriteLine(rand.NextDouble();
 
             double val = (rand.NextDouble() * (100));
 
